@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Quattrocento", serif;
+    
+}
+body{
+    background-color: rgb(231, 226, 226);
+    width: 100%;
+    height: 100vh;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(231, 226, 226);
+}
+.navbar{
+    position: fixed;
+    z-index: 40;
+    width: 100%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(231, 226, 226);
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(59, 45, 17);
+    text-transform: uppercase
+}
+.navbar ul li::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background: #fcb05a;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.kowntent{
+    text-align: center;
+    justify-content: center;
+}
+.kontener{
+    padding: 30px;
+    position: relative;
+    margin:auto;
+}
+.kontener h4{
+    position: relative;
+    padding: 30px;
+    margin-top: 140px;
+    font-size: 50px;
+    color:  #35291a;
+}
+.sub-kontener{
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    margin: 0px 200px 0px 200px ;
+}
+.teams{
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    width: 300px;
+    height: 400px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-size: cover;
+    text-align: center;
+    background:rgb(241, 238, 238);
+    border: solid;
+    border-color:rgb(231, 226, 226);
+    transition: 0.3s;
+}
+.teams:hover{
+    border: solid;
+    border-width: 2px;
+    border-color:#35291a;
+    height: 402px;
+    width: 302px;
+    
+}
+.teams img{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 300px ;
+    max-height: 200px ;
+    width:auto;
+    max-width: 289;
+}
+.namae{
+    padding: 12px;
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.desayn{
+    font-style: italic;
+    color: #35291a;
+}
+.about{
+    margin: 22px 0 10px 0px;
+    font-weight: lighter;
+    color: #35291a;
+    justify-content: center;
+
+}
+.teams a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:#dfd6cb;
+    background-color: #35291a;
+    background-size: cover;
+    height: 40px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+footer{
+    position: absolute;
+    bottom: -1000px;
+    left: 0;
+    right: 0;
+    background-image: url(pics/ghiblifooter.jpg);
+    height: auto;
+    width: 100%;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+    overflow: hidden;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.socials a:hover i{
+    color: #04470b;
+}

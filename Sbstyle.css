@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Quattrocento", serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(231, 226, 226);
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(59, 45, 17);
+    text-transform: uppercase
+}
+.navbar ul li::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background: #fcb05a;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    position: absolute;
+    width: 500px;
+}
+.container h2{
+    color:rgb(59, 45, 17);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+}
+.container .skills{
+    position: relative;
+    display: flex;
+    margin: 20px 0;
+    padding: 24px 10px 10px;
+    background: linear-gradient(#0000005f 0%, rgba(0, 0, 0, 0.759) 10%, rgba(0, 0, 0, 0.526));
+    border-radius: 23px;
+    overflow: hidden;
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: 0.5s;
+}
+.container:hover .skills{
+    opacity: 0.05;
+}
+.container .skills:hover{
+    opacity: 1;
+}
+.container .skills::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    z-index: 10;
+}
+.container .skills .name{
+    position: relative;
+    width: 110px;
+    text-align: left;
+    color: rgb(59, 45, 17);;
+    margin-top: -7px;
+    text-transform: uppercase;
+}
+.container .skills .value{
+    position: relative;
+    width: 40px;
+    text-align: left;
+    color: rgb(59, 45, 17);
+    margin-top: -2px;
+    text-transform: uppercase;
+}
+.container .skills .percent{
+    position: relative ;
+    top: -5px;
+    width: calc(100% - 150px);
+    height: 20px;
+    margin: 0 10px;
+    border-radius: 30px;
+    background: #151515;
+    box-shadow: inset 0 0 10px #000;
+    overflow: hidden;
+}
+.container .skills .percent .progress{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    border-radius: 30px;
+    background:rgb(3, 41, 0);
+    box-shadow: inset 0 0 2px #000;
+    animation: animate 3s ease-in-out forwards;
+}
+@keyframes animate{
+    from{
+        width: 0;
+    }
+}
+.container .skills:nth-child(3) .percent .progress{
+    background: linear-gradient(45deg, rgb(252,176,90), rgb(0, 0, 0), rgb(252,176,90));
+}
+.container .skills:nth-child(4) .percent .progress{
+    background: linear-gradient(45deg, rgb(100, 176, 59), rgb(233, 255, 221), rgb(202, 73, 73));
+}
+.container .skills:nth-child(5) .percent .progress{
+    background: linear-gradient(45deg, rgb(0, 125, 121), rgb(162, 193, 192), rgb(133, 118, 16));
+}
+.container .skills:nth-child(6) .percent .progress{
+    background: linear-gradient(45deg, rgb(100, 176, 59), rgb(233, 255, 221), rgb(202, 73, 73));
+}
+.imeyds img{
+    position: absolute;
+    width: 180px;
+    left: 700px;
+}
+footer{
+    position: sticky;
+    bottom: -218px;
+    left: 0;
+    right: 0;
+    background-image: url(pics/ghiblifooter.jpg);
+    height: auto;
+    width: 100%;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.socials a:hover i{
+    color: #04470b;
+}
